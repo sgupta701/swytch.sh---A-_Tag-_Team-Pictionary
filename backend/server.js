@@ -8,7 +8,11 @@ const wordsList = require('./words.json');
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, { cors: { origin: "http://localhost:3000" } });
+const io = new Server(server, { 
+  cors: { 
+    origin: "https://swytch-sh-app.onrender.com" 
+  } 
+});
 
 const rooms = {};
 
