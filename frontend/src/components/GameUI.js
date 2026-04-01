@@ -19,14 +19,9 @@ const GameUI = ({ totalTime, relayTime, currentWord, myHint, maskedWord, gameSta
     }
 
     return (
-        <div className="w-full max-w-4xl flex flex-col gap-2 relative mt-8">
-            
-            <div className="absolute -top-10 left-0 bg-white/20 text-white px-4 py-1 rounded-t-lg border-2 border-b-0 border-white/30 backdrop-blur-sm">
-                <span className="text-[10px] font-bold uppercase opacity-70 mr-2">Playing as:</span>
-                <span className="font-black text-sm">{username}</span>
-            </div>
+        <div className="w-full max-w-4xl flex flex-col gap-1 relative -mt-8">
 
-            <div className="bg-gray-800 text-white p-4 rounded-t-xl flex justify-between items-center">
+            <div className="bg-gray-800 text-white py-2 px-4 rounded-t-xl flex justify-between items-center">
                 <div className="text-lg font-bold w-1/4">
                     ROUND {gameState?.currentRound} / {gameState?.totalRounds}
                 </div>
@@ -56,7 +51,7 @@ const GameUI = ({ totalTime, relayTime, currentWord, myHint, maskedWord, gameSta
                 </div>
             </div>
             
-            <div className="bg-white p-2 text-center border-2 border-gray-300 rounded-b-lg flex flex-col items-center justify-center min-h-[70px]">
+            <div className="bg-white p-1 text-center border-2 border-gray-300 rounded-b-lg flex flex-col items-center justify-center min-h-[50px]">
                 <p className="tracking-[0.3em] font-black text-2xl uppercase">
                     {mainWord}
                 </p>

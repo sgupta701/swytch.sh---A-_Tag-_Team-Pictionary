@@ -181,9 +181,9 @@ const Canvas = ({ socket, roomId, isActive }) => {
         : "url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><text y=\"20\" font-size=\"20\">✏️</text></svg>') 0 24, crosshair";
 
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
             {/* TOOLBAR */}
-            <div className={`flex flex-col gap-2 p-3 bg-gray-200 rounded-t-lg border-b-2 border-gray-400 ${!isActive && 'opacity-50 pointer-events-none'}`}>
+            <div className={`flex flex-col gap-1.5 p-1.5 bg-gray-200 rounded-t-lg border-b-2 border-gray-400 ${!isActive && 'opacity-50 pointer-events-none'}`}>
                 
                 <div className="flex gap-4 items-center justify-between">
                     <div className="flex gap-2">
@@ -208,7 +208,7 @@ const Canvas = ({ socket, roomId, isActive }) => {
                         <div 
                             key={c} 
                             onClick={() => { setColor(c); if(tool === 'eraser') setTool('pen'); }}
-                            className={`w-6 h-6 cursor-pointer border-2 shadow-sm ${color === c && tool !== 'eraser' ? 'border-white scale-110 z-10' : 'border-black/20'}`}
+                            className={`w-5 h-5 cursor-pointer border-2 shadow-sm ${color === c && tool !== 'eraser' ? 'border-white scale-110 z-10' : 'border-black/20'}`}
                             style={{ backgroundColor: c }}
                             title={c}
                         />
@@ -223,7 +223,7 @@ const Canvas = ({ socket, roomId, isActive }) => {
                 onMouseUp={handleMouseUp}
                 onMouseOut={handleMouseUp}
                 width={800}
-                height={500}
+                height={470}
                 style={{ cursor: isActive ? cursorStyle : 'default' }}
                 className={`bg-white shadow-xl border-4 ${isActive ? 'border-green-500' : 'border-gray-300'}`}
             />
