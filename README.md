@@ -7,7 +7,7 @@ swytch.sh is a unique twist on the classic "Pictionary" style game. Unlike tradi
 
 [**PLay Live (click here)**](https://swytch-sh-app.onrender.com/)
 
-> **Note:** This project is hosted on a Render free tier. If the site has been inactive, the backend server may take **up to 50 seconds** to "wake up" before you can create or join a room.
+> **Note:** This project is hosted on a Render free tier. If the site has been inactive, the backend server may take **up to 50 seconds** to "wake up" before you can create or join a room. 
 
 ---
 
